@@ -26,17 +26,17 @@ return require('packer').startup(function(use)
   use("theprimeagen/harpoon")
   use("mbbill/undotree")
   use("tpope/vim-fugitive")
+  use("windwp/nvim-ts-autotag")
+  use("folke/zen-mode.nvim")
+  use("github/copilot.vim")
+  use("eandrju/cellular-automaton.nvim")
+  use("tpope/vim-surround")
 
   use {
     "windwp/nvim-autopairs",
     config = function() require("nvim-autopairs").setup {} end
   }
 
-  use("windwp/nvim-ts-autotag")
-  use("folke/zen-mode.nvim")
-  use("github/copilot.vim")
-  use("eandrju/cellular-automaton.nvim")
-  use("tpope/vim-surround")
 
   use {
     'VonHeikemen/lsp-zero.nvim',

@@ -35,11 +35,5 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>")
 
-vim.keymap.set("n", "<leader><leader>", function()
-	vim.cmd("so")
-end)
-
 -- Saves buffer using update
-vim.keymap.set({ "n", "i", "x", "s" }, "<C-s>", function()
-	vim.cmd("update")
-end)
+vim.keymap.set({ "n", "i", "x", "s" }, "<C-s>", "<Cmd>update<CR>", { noremap = true, silent = true })
